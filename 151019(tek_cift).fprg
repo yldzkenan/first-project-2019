@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 11:37:32 "/>
+        <attribute name="created" value="YXN1cztVU0VSMTE7MjAxOS0xMC0xNTsiMTE6MjM6MjEgIjsyMDQ1"/>
+        <attribute name="edited" value="YXN1cztVU0VSMTE7MjAxOS0xMC0xNTsiMTE6Mzc6MzIgIjsxOzIxNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <while expression="sayi&gt;=0">
+                <output expression="&quot;Say&#305; giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi%2=0">
+                    <then>
+                        <output expression="&quot;&#199;&#304;FT&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;TEK&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

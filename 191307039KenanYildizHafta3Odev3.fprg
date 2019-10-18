@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="41"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-16 11:48:54 &#214;&#214;"/>
+        <attribute name="created" value="NDE7REVTS1RPUC1CVjNUNEwxOzIwMTktMTAtMTY7MTE6MDE6NTcgw5bDljsyNjk4"/>
+        <attribute name="edited" value="NDE7REVTS1RPUC1CVjNUNEwxOzIwMTktMTAtMTY7MTE6NDg6NTQgw5bDljsyOzI4MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, uzunluk, islem, bas1, bas2, bas3, bas4, bas5" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="uzunluk" expression="0"/>
+            <output expression="&quot;Pozitif 5 basamakl&#305; say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi&lt;=0">
+                <output expression="&quot;Pozitif Say&#305; Giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+            </while>
+            <assign variable="uzunluk" expression="Len(ToString(sayi))"/>
+            <while expression="uzunluk!=5">
+                <output expression="&quot;5 Basamakl&#305; Say&#305; G&#304;R&#304;N&#304;Z&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <assign variable="uzunluk" expression="Len(ToString(sayi))"/>
+            </while>
+            <assign variable="bas5" expression="sayi/10000"/>
+            <assign variable="bas4" expression="(sayi/1000)%10"/>
+            <assign variable="bas3" expression="(sayi/100)%10"/>
+            <assign variable="bas2" expression="(sayi%100)/10"/>
+            <assign variable="bas1" expression="sayi%10"/>
+            <output expression="&quot;Girdi&#287;iniz say&#305;n&#305;n basamak de&#287;erleri kareleri toplam&#305;= &quot;&amp;(bas1*bas1)+(bas2*bas2)+(bas3*bas3)+(bas4*bas4)+(bas5*bas5)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

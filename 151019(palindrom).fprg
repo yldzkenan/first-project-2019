@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 11:22:37 "/>
+        <attribute name="created" value="YXN1cztVU0VSMTE7MjAxOS0xMC0xNTsiMTA6MjY6MDEgIjsyMDQ1"/>
+        <attribute name="edited" value="YXN1cztVU0VSMTE7MjAxOS0xMC0xNTsiMTE6MjI6MzcgIjsxOzIxNTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, k, l" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="9" direction="inc" step="1">
+                <for variable="j" start="0" end="9" direction="inc" step="1">
+                    <for variable="k" start="0" end="9" direction="inc" step="1">
+                        <if expression="i=k">
+                            <then>
+                                <output expression="i&amp;j&amp;k" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </for>
+            </for>
+            <for variable="i" start="1" end="9" direction="inc" step="1">
+                <for variable="j" start="0" end="9" direction="inc" step="1">
+                    <for variable="k" start="0" end="9" direction="inc" step="1">
+                        <for variable="l" start="0" end="9" direction="inc" step="1">
+                            <if expression="i=l">
+                                <then>
+                                    <if expression="j=k">
+                                        <then>
+                                            <output expression="i&amp;j&amp;k&amp;l" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                    </for>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

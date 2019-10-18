@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-30 11:50:16 "/>
+        <attribute name="created" value="YXN1cztVU0VSMTE7MjAxOS0wOS0zMDsiMTE6NDI6MzcgIjsyMDU4"/>
+        <attribute name="edited" value="YXN1cztVU0VSMTE7MjAxOS0wOS0zMDsiMTE6NTA6MTYgIjsxOzIxNjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sonuc" type="Integer" array="False" size=""/>
+            <output expression="&quot;Sayi giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="sonuc" expression="sayi mod 2"/>
+            <if expression="sonuc=0">
+                <then>
+                    <output expression="&quot;SAYI &#199;&#304;FT&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;SAY&#304; TEK&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

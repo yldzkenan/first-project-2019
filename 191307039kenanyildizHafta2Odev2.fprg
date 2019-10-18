@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="41"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 11:23:28 &#214;&#214;"/>
+        <attribute name="created" value="NDE7REVTS1RPUC1CVjNUNEwxOzIwMTktMTAtMDk7MTE6MDk6NDUgw5bDljsyNzA1"/>
+        <attribute name="edited" value="NDE7REVTS1RPUC1CVjNUNEwxOzIwMTktMTAtMDk7MTE6MjM6Mjggw5bDljsyOzI4MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rst, thmn, syc" type="Integer" array="False" size=""/>
+            <assign variable="thmn" expression="0"/>
+            <assign variable="syc" expression="0"/>
+            <assign variable="rst" expression="Random(100)"/>
+            <output expression="&quot;0-100 ARASI SAYI TAHM&#304;N OYUNUNA HO&#350;GELD&#304;N&#304;Z!&quot;" newline="True"/>
+            <output expression="&quot;Say&#305;y&#305; Tahmin Ediniz&quot;" newline="True"/>
+            <do expression="thmn!=rst">
+                <input variable="thmn"/>
+                <if expression="thmn&lt;rst">
+                    <then>
+                        <output expression="&quot;DAHA B&#220;Y&#220;K B&#304;R SAYIYI G&#304;R&#304;N&#304;Z&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="thmn&gt;rst">
+                            <then>
+                                <output expression="&quot;DAHA K&#220;&#199;&#220;K B&#304;R SAYI G&#304;R&#304;N&#304;Z&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="syc" expression="syc+1"/>
+            </do>
+            <output expression="&quot;TEBR&#304;KLER! &quot; &amp;thmn&amp; &quot; SAYISI DO&#286;RU TAHM&#304;N &quot; &amp;syc&amp;&quot;. DENEMEN&#304;ZDE B&#304;LD&#304;N&#304;Z.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

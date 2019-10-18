@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="41"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-02 11:25:47 &#214;&#214;"/>
+        <attribute name="created" value="NDE7REVTS1RPUC1CVjNUNEwxOzIwMTktMTAtMDI7MTE6MTY6Mjkgw5bDljsyNjk4"/>
+        <attribute name="edited" value="NDE7REVTS1RPUC1CVjNUNEwxOzIwMTktMTAtMDI7MTE6MjU6NDcgw5bDljsyOzI4MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, sonuc" type="Real" array="False" size=""/>
+            <declare name="islem, top, c&#305;k, carp, bol" type="String" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Yap&#305;lacak i&#351;lemi giriniz; Toplama,&#199;&#305;kartma,&#199;arpma,B&#246;lme&quot;" newline="True"/>
+            <input variable="islem"/>
+            <if expression="islem=&quot;&#199;arpma&quot;">
+                <then>
+                    <assign variable="sonuc" expression="a*b"/>
+                    <output expression="sonuc" newline="True"/>
+                </then>
+                <else>
+                    <if expression="islem=&quot;&#199;&#305;kartma&quot;">
+                        <then>
+                            <assign variable="sonuc" expression="a-b"/>
+                            <output expression="sonuc" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="islem=&quot;B&#246;lme&quot;">
+                                <then>
+                                    <assign variable="sonuc" expression="a/b"/>
+                                    <output expression="sonuc" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="islem=&quot;Toplama&quot;">
+                                        <then>
+                                            <assign variable="sonuc" expression="a+b"/>
+                                            <output expression="sonuc" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Hatal&#305; i&#351;lem yapt&#305;n&#305;z&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
