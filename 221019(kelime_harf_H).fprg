@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 09:26:49 "/>
+        <attribute name="created" value="YXN1cztVU0VSMTE7MjAxOS0xMC0yMjsiMDk6MTQ6MzggIjsyMDU4"/>
+        <attribute name="edited" value="YXN1cztVU0VSMTE7MjAxOS0xMC0yMjsiMDk6MjY6NDkgIjsxOzIxNzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kelime, harf" type="String" array="False" size=""/>
+            <assign variable="kelime" expression="&quot;&quot;"/>
+            <assign variable="harf" expression="&quot;&quot;"/>
+            <while expression="harf!=&quot;H&quot;">
+                <input variable="harf"/>
+                <if expression="Len(harf)&gt;1">
+                    <then>
+                        <output expression="&quot;Tek karakter giriniz&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="harf!=&quot;H&quot;">
+                            <then>
+                                <assign variable="kelime" expression="kelime&amp;harf"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="kelime" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
